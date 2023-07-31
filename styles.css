@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root{
+    --Light-red: hsl(0, 100%, 67%);
+    --Light-red-bg: rgb(246, 234, 234);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Orangey-yellow-bg: hsl(56, 83%, 86%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Green-teal-bg: hsl(166, 69%, 82%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Cobalt-blue-bg: hsl(205, 72%, 85%);
+
+
+
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+
+
+
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: var(--White);
+    
+}
+
+.card1{
+    width: 45vw;
+    height: 65vh;
+    background-color: var(--Light-slate-blue-background);
+    border-radius: 12px;
+}
+
+.card1 .header{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: var(--Light-lavender);
+    
+    font-weight: 500;
+}
+
+.rounded{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card1-result{
+    width: 150px;
+    height: 150px;
+    background-color: var(--Light-royal-blue-background);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(360deg, var(--Persian-blue-circle), var(--Violet-blue-circle));
+}
+
+.card1-result h2{
+    font-size: 2.5rem;
+    color: var(--White);
+    margin-bottom: 15px;
+}
+
+.card1-result p{
+    color: var(--White);
+}
+
+.card1-description{
+    text-align: center;
+    margin-top: 35px;
+}
+
+.card1-description h2{
+    color: var(--White);
+    margin-bottom: 25px;
+}
+
+.card1-description p{
+    margin-left:20px;
+    margin-right: 20px;
+    font-size: 18px;
+    color: var(--Light-lavender);
+}
+
+.card2{
+    width: 40vw;
+    height: 65vh;
+    background-color: var(--White);
+    margin-left: 25px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 5px 5px 5px hsla(0, 100%, 0%, 0.1);
+}
+
+.card2 .header{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: var(--Dark-gray-blue);
+    font-weight: 700;
+}
+
+.result{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--Light-red-bg);
+    margin-bottom: 30px;
+    width: 90%;
+    height: 8%;
+    border-radius: 5px;
+}
+
+.result h2{
+    margin-left: 10px;
+}
+
+.bold{
+    color: var(--Dark-gray-blue);
+    font-weight: 700;
+    
+}
+
+.reaction h2{
+    color: var(--Light-red);
+} 
+
+.reaction p{
+    padding-left: 20px;
+    padding-top: 15px;
+    
+} 
+
+.memory{
+    background-color: var(--Orangey-yellow-bg);
+}
+
+.memory h2{
+    color: var(--Orangey-yellow);
+} 
+
+.memory p{
+    padding-left: 20px;
+} 
+
+.verbal{
+    background-color: var(--Green-teal-bg);
+}
+
+.verbal h2{
+    color: var(--Green-teal);
+}
+
+.verbal p{
+    padding-left: 37px;
+} 
+
+.visual{
+    background-color: var(--Cobalt-blue-bg);
+}
+
+.visual h2{
+    color: var(--Cobalt-blue);
+}
+
+.visual p{
+    padding-left: 40px;
+} 
+
+button{
+    width: 90%;
+    height: 45px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: var(--White);
+    background-color: var(--Dark-gray-blue);
+}
+
+button:hover{
+    background-color: var(--Light-slate-blue-background);
+}
